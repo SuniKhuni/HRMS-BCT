@@ -1,0 +1,7 @@
+<h2>Payroll</h2>
+
+<ul>
+    {% for p in payroll %}
+        <li>{{ p.employee.name }} - ₹{{ p.salary }}</li>
+    {% endfor %}
+</ul>

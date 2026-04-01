@@ -1,0 +1,9 @@
+<h2>Employee List</h2>
+
+<ul>
+    {% for emp in employees %}
+        <li>{{ emp.name }} - {{ emp.department }} - ₹{{ emp.salary }}</li>
+    {% endfor %}
+</ul>
+
+<a href="/add-employee/">Add New Employee</a>

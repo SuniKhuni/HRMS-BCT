@@ -1,0 +1,7 @@
+<h2>Apply Leave</h2>
+
+<form method="post">
+    {% csrf_token %}
+    {{ form.as_p }}
+    <button type="submit">Apply</button>
+</form>
